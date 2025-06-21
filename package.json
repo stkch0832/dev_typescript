@@ -1,0 +1,11 @@
+{
+  "name": "dev_ts",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc index.ts && node index.js"
+  },
+  "devDependencies": {
+    "typescript": "^5.4.0"
+  }
+}

@@ -1,0 +1,40 @@
+{
+  "name": "dev_ts",
+  "build": {
+    "dockerfile": "Dockerfile",
+    "context": ".."
+  },
+  "customizations": {
+    "vscode": {
+      "settings": {
+        "terminal.integrated.defaultProfile.linux": "bash",
+        "files.encoding": "utf8",
+        "files.eol": "\r\n"
+      },
+      "extensions": [
+        // vscode
+        "ms-ceintl.vscode-language-pack-ja",
+        "vscode-icons-team.vscode-icons",
+        "esbenp.prettier-vscode",
+        "oderwat.indent-rainbow",
+        "ritwickdey.LiveServer",
+        "aaron-bond.better-comments",
+        // Git
+        "eamodio.gitlens",
+        "donjayamanne.githistory",
+        "mhutchie.git-graph",
+        // JS・TS
+        "dbaeumer.vscode-eslint",
+        "ms-vscode.vscode-typescript-next",
+        // HTML・CSS
+        "ecmel.vscode-html-css",
+        "formulahendry.auto-rename-tag",
+        "formulahendry.auto-close-tag",
+        "vincaslt.highlight-matching-tag",
+        "codelios.dartsass"
+      ]
+    }
+  },
+  "postCreateCommand": "npm install",
+  "remoteUser": "root"
+}
